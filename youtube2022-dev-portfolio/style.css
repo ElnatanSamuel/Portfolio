@@ -83,7 +83,7 @@
 }
 
 .dark {
-  background-color: #fff;
+  background-color: #0d7377;
 }
 .purple {
   background-color: #fff;
@@ -110,7 +110,7 @@
   cursor: pointer;
   border: 1px solid #000;
   background: transparent;
-  padding: 5px 20px 5px 20px;
+  padding: 10px 20px 10px 20px;
   position: absolute;
   top: 65%;
   left: 25%;
@@ -321,6 +321,10 @@
     flex-direction: column;
   }
 
+  .dark {
+    background-color: #fff;
+  }
+
   .phone,
   .laptop {
     transform: none !important;
@@ -384,7 +388,7 @@
   }
 
   .btnresume {
-    top: 60%;
+    top: 100%;
     left: 5%;
   }
 
@@ -407,7 +411,7 @@
 
   .projectTitle {
     font-size: 25px;
-    margin-top: 50px;
+    margin-top: 150px;
   }
 
   .projects {
@@ -445,6 +449,25 @@
   }
 
   .laptop .imglaptap {
+    display: none;
+  }
+
+  .githubContainer {
+    height: 450px;
+    margin-top: 300px;
+  }
+
+  .salute {
+    margin-top: 100px;
+    height: 100px;
+  }
+
+  .jobTitleContainer {
+    height: 150px;
+    margin-bottom: 100px;
+  }
+
+  .jobTitle {
     display: none;
   }
 }
