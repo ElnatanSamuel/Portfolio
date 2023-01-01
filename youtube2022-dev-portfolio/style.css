@@ -388,7 +388,7 @@
   }
 
   .btnresume {
-    top: 100%;
+    top: 120%;
     left: 5%;
   }
 
@@ -415,7 +415,7 @@
   }
 
   .projects {
-    gap: 10vh;
+    gap: 9vh;
   }
 
   .listskills {
