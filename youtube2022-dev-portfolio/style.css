@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.salute {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* .saluteTextContainer {
+  flex: 3;
+} */
+
+/* .saluteImgContainer {
+  flex: 1;
+} */
+
+/* .saluteText {
+  padding-top: 5%;
+  padding-left: 5%;
+  color: #0d7377;
+  font-size: 3rem;
+  cursor: default;
+} */
+
+.nametext {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  /* padding-left: 5%; */
+  color: #000;
+  font-size: 2rem;
+  cursor: default;
+  font-weight: bold;
+  width: 100%;
+}
+
+.whattext {
+  padding-top: 30px;
+  text-align: center;
+  /* padding-left: 5%; */
+  color: #000;
+  font-size: 2rem;
+  cursor: default;
+
+  width: 100%;
+}
+
+.saluteImg {
+  padding-top: 20px;
+  width: 600px;
+  height: 600px;
+}
+
+.nameContainer {
+  height: 100vh;
+  background-color: #0d7377;
+}
+
+.name {
+  font-size: 15vw;
+  color: #171c25;
+  cursor: default;
+  text-align: center;
+  line-height: 100vh;
+}
+
+.jobTitleContainer {
+  height: 100vh;
+  position: relative;
+}
+
+.dark {
+  background-color: #fff;
+}
+.purple {
+  background-color: #fff;
+}
+
+.jobTitle {
+  font-size: 20vw;
+  color: #000;
+  line-height: 100vh;
+  cursor: default;
+  opacity: 0.1;
+}
+
+.jobpreview {
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  /* font-weight: lighter; */
+  color: #212121;
+}
+
+.btnresume {
+  cursor: pointer;
+  border: 1px solid #000;
+  background: transparent;
+  padding: 5px 20px 5px 20px;
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  font-weight: bold;
+  z-index: 20;
+}
+
+.listskills {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+}
+
+/* .listskill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.paraicon {
+  color: #212121;
+  font-size: 30px;
+  font-weight: lighter;
+  padding: 10px 0px;
+  /* opacity: 0.8; */
+}
+
+.jobTitle2 {
+  font-size: 5vw;
+  color: #323232;
+  line-height: 100vh;
+  cursor: default;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 30vh;
+  padding: 0px 100px;
+}
+
+.projectsTitle {
+  font-size: 7vw;
+  color: #333;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+  /* overflow: hidden; */
+  margin-bottom: 20px;
+}
+
+.project:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.phone {
+  flex: 1;
+  width: 300px;
+  height: 600px;
+  position: relative;
+}
+
+.phoneScreen {
+  width: 264px;
+  height: 567px;
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  border-radius: 28px;
+  overflow: scroll;
+}
+
+.phoneScreen::-webkit-scrollbar {
+  display: none;
+}
+
+.phoneApp {
+  width: 100%;
+}
+
+.projectDetail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.projectTitle {
+  font-size: 40px;
+  color: #000;
+  opacity: 0.8;
+}
+
+.projectDesc {
+  font-size: 16px;
+  color: #555;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.projectButton {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.projectButton::after {
+  content: "View Demo";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.projectButton:hover.projectButton::after {
+  transform: translateX(100%);
+}
+
+.laptop {
+  width: 600px;
+  height: 379px;
+  flex: 1;
+  position: relative;
+}
+
+.laptopScreen {
+  width: 451px;
+  height: 283px;
+  position: absolute;
+  top: 18px;
+  left: 68px;
+  overflow: scroll;
+}
+
+.laptopApp {
+  width: 100%;
+}
+
+.laptopScreen::-webkit-scrollbar {
+  display: none;
+}
+
+.githubContainer {
+  height: 100vh;
+}
+
+.githubTitle {
+  font-size: 100px;
+  color: #333;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.linkicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.linkicon {
+  width: 100px;
+  height: 100px;
+  color: #14ffec;
+}
+
+.skills1060 {
+  display: none;
+}
+
+.projectstart {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .project {
+    flex-direction: column;
+    height: max-content;
+  }
+  .project:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .phone,
+  .laptop {
+    transform: none !important;
+  }
+
+  .githubChart {
+    display: none;
+  }
+
+  .githubTitle {
+    text-align: center;
+    font-size: 70px;
+  }
+
+  .githubSm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #555;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .listskills {
+    padding-top: 50px;
+    position: unset;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .btnresume {
+    top: 75%;
+  }
+
+  .skills1060 {
+    padding-top: 150px;
+    display: block;
+    font-size: 30px;
+    opacity: 0.8;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .nametext {
+    font-size: 1.2rem;
+  }
+
+  .whattext {
+    font-size: 1.2rem;
+  }
+
+  .jobpreview {
+    font-size: 20px;
+    top: 40%;
+    left: 5%;
+    font-weight: lighter;
+  }
+
+  .btnresume {
+    top: 60%;
+    left: 5%;
+  }
+
+  .jobTitleContainer {
+    height: 500px;
+  }
+
+  .projectsTitle {
+    font-size: 7vw;
+    color: #333;
+    display: none;
+  }
+
+  .projectstart {
+    display: block;
+    font-size: 30px;
+    opacity: 0.8;
+    text-align: center;
+  }
+
+  .projectTitle {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  .projects {
+    gap: 10vh;
+  }
+
+  .listskills {
+    top: 10%;
+    left: 10%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .paraicon {
+    font-size: 20px;
+  }
+
+  .githubTitle {
+    font-size: 30px;
+    padding-top: 200px;
+  }
+
+  .projectDetail {
+    padding-top: 50px;
+  }
+
+  .linkicons {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .linkicon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .laptop .imglaptap {
+    display: none;
+  }
+}
