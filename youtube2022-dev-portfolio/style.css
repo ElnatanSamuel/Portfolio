@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap");
 
 * {
   padding: 0;
@@ -20,9 +20,9 @@
   overflow: hidden;
 }
 
-/* .saluteTextContainer {
-  flex: 3;
-} */
+.saluteTextContainer {
+  position: relative;
+}
 
 /* .saluteImgContainer {
   flex: 1;
@@ -37,11 +37,11 @@
 } */
 
 .nametext {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Yellowtail", cursive;
   text-align: center;
   /* padding-left: 5%; */
   color: #000;
-  font-size: 2rem;
+  font-size: 5rem;
   cursor: default;
   font-weight: bold;
   width: 100%;
@@ -52,10 +52,34 @@
   text-align: center;
   /* padding-left: 5%; */
   color: #000;
-  font-size: 2rem;
+  font-size: 2.5rem;
   cursor: default;
 
   width: 100%;
+}
+
+.arrowdownimg {
+  width: 40px;
+  height: 40px;
+  font-weight: lighter;
+  position: absolute;
+  top: 180%;
+  left: 47%;
+  animation-name: scaledArrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes scaledArrow {
+  from {
+    /* scale: 1; */
+    top: 160%;
+  }
+  to {
+    /* scale: 1.5; */
+    top: 180%;
+  }
 }
 
 .saluteImg {
@@ -116,6 +140,7 @@
   left: 25%;
   font-weight: bold;
   z-index: 20;
+  opacity: 0.8;
 }
 
 .listskills {
@@ -371,17 +396,40 @@
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 1030px) {
   .nametext {
-    font-size: 1.2rem;
+    font-size: 3rem;
   }
 
   .whattext {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  @keyframes scaledArrow {
+    from {
+      top: 180%;
+    }
+    to {
+      top: 200%;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .nametext {
+    font-size: 2rem;
+  }
+
+  .whattext {
+    font-size: 1rem;
+  }
+
+  .arrowdownimg {
+    display: none;
   }
 
   .jobpreview {
-    font-size: 20px;
+    font-size: 18px;
     top: 40%;
     left: 5%;
     font-weight: lighter;
@@ -407,6 +455,7 @@
     font-size: 30px;
     opacity: 0.8;
     text-align: center;
+    margin-top: 30px;
   }
 
   .projectTitle {
@@ -415,6 +464,7 @@
   }
 
   .projects {
+    margin-top: 30px;
     gap: 9vh;
   }
 
@@ -469,5 +519,72 @@
 
   .jobTitle {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  @keyframes scaledArrow {
+    from {
+      top: 210%;
+    }
+    to {
+      top: 230%;
+    }
+  }
+
+  .nametext {
+    font-size: 7rem;
+  }
+
+  .whattext {
+    font-size: 4rem;
+  }
+
+  .arrowdownimg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .jobpreview {
+    font-size: 3.5rem;
+  }
+
+  .jobTitle {
+    font-size: 19vw;
+  }
+
+  .btnresume {
+    border: 2px solid #000;
+    font-size: 1.5rem;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .project {
+    height: 300px;
+    margin-bottom: 100px;
+  }
+
+  .projectDesc {
+    font-size: 1.5rem;
+  }
+
+  .paraicon {
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+
+  .listskills {
+    top: 20%;
+    left: 70%;
+  }
+
+  .projectButton {
+    padding: 20px 40px;
+    border: 3px solid #000;
+    font-size: 1.2rem;
+  }
+
+  .githubContainer {
+    height: 900px;
   }
 }

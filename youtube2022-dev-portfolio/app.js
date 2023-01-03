@@ -49,5 +49,12 @@ window.addEventListener("scroll", () => {
   laptop[0].style.transform = `translateX(calc(270vh - ${offsetY}px))`;
   laptop[1].style.transform = `translateX(calc(400vh - ${offsetY}px))`;
   laptop[2].style.transform = `translateX(calc(530vh - ${offsetY}px))`;
+
+  if (screen.width >= 1600) {
+    laptop[0].style.transform = `translateX(calc(250vh - ${offsetY}px))`;
+    laptop[1].style.transform = `translateX(calc(300vh - ${offsetY}px))`;
+    laptop[2].style.transform = `translateX(calc(400vh - ${offsetY}px))`;
+    jobTitles[1].style.transform = `translateX(calc(450vh - ${offsetY}px))`;
+  }
   // phones[1].style.transform = `translateX(calc(750vh - ${offsetY}px))`;
 });
