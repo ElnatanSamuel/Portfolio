@@ -9,6 +9,8 @@
 .container {
   background-color: #fff;
   overflow: hidden;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .salute {
@@ -601,4 +603,27 @@
   .githubContainer {
     height: 900px;
   }
+}
+
+.info {
+  font-size: 12px;
+  opacity: 60%;
+}
+
+.cardinfos {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -30px;
+}
+
+.cardinfo {
+  padding-right: 10px;
+}
+
+.cardinfo p {
+  font-size: 10px;
+  font-weight: bold;
+  background: #000;
+  color: white;
+  padding: 8px 12px;
 }
