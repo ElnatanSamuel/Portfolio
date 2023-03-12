@@ -310,6 +310,11 @@
   width: 100%;
 }
 
+.laptopApp2 {
+  width: 100%;
+  height: 100%;
+}
+
 .laptopScreen::-webkit-scrollbar {
   display: none;
 }
