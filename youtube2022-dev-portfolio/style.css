@@ -9,7 +9,7 @@
 .container {
   background-color: #fff;
   overflow: hidden;
-  max-width: 1500px;
+  /* max-width: 1500px; */
   margin: auto;
 }
 
@@ -147,6 +147,7 @@
 }
 
 .btnresume {
+  text-decoration: none;
   cursor: pointer;
   border: 1px solid #000;
   background: transparent;
@@ -157,6 +158,7 @@
   font-weight: bold;
   z-index: 20;
   opacity: 0.8;
+  color: #000;
 }
 
 .listskills {
